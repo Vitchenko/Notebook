@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="nb_bd" id="AB821B29-4423-8234-B212-B5EAC90F4F4D" version="3.5">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:02:54 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>AB821B29-4423-8234-B212-B5EAC90F4F4D</designId>
+</OSDM_Design>

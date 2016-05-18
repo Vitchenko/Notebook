@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Pole" directorySegmentName="seg_0" id="3A58FCB3-35C4-3BD6-49B6-5D79AB3E5F1A">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:00:54 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Pole_id" id="38223002-6173-8B40-EB1B-6E336DF5BE56">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:01:54 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Name" id="A1B1A1A9-225F-1925-0916-73BC65F6DA9B">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:02:23 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Pole_PK" id="F59CB7F0-26BE-2B7F-4D53-773D731C97D1">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:01:54 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

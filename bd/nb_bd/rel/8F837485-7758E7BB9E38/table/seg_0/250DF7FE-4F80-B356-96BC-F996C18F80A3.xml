@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="250DF7FE-4F80-B356-96BC-F996C18F80A3" name="Person">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:04:48 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Person_id" id="7EBE9A2E-E3A3-5C81-F547-299A91BC2A41">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:08:02 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lname" id="906A991C-7CC8-9209-2C02-D3D55C032D81">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:08:02 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fname" id="4E7B3BB1-E9D3-46C2-1155-C5034E6E10E7">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:08:02 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Photo" id="DD3EF3FD-504E-3F08-7116-1F95A84F7D0E">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:00:12 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adress" id="22EEB0D4-DCEF-4939-82C7-341496F750F4">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:00:43 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pole" id="D7D7C727-B5D3-C565-479B-345E286D46C4">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:02:55 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B662826-D189-7C6E-922B-BB9224AF40DE" referredColumn="38223002-6173-8B40-EB1B-6E336DF5BE56"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CFB7FCD-02FE-12BD-3E79-42C10213E995" name="Person_PK">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:08:02 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EBE9A2E-E3A3-5C81-F547-299A91BC2A41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F53A3035-8B4E-DDAC-0677-569DFA4C2432" name="Person_Pole_FK">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:04:17 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7D7C727-B5D3-C565-479B-345E286D46C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

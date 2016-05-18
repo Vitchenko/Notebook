@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A58FCB3-35C4-3BD6-49B6-5D79AB3E5F1A" name="Pole">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:00:54 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pole_id" id="38223002-6173-8B40-EB1B-6E336DF5BE56">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:01:54 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name" id="A1B1A1A9-225F-1925-0916-73BC65F6DA9B">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:02:23 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F59CB7F0-26BE-2B7F-4D53-773D731C97D1" name="Pole_PK">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 14:01:54 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38223002-6173-8B40-EB1B-6E336DF5BE56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

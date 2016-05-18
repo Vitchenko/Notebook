@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B348545B-1931-6D3F-2C15-16EB3CEDC037" name="Phones">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:20:23 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D7C0B2D2-1AFB-28E9-93DD-3B989F1A067E">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:21:08 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number" id="4BD65961-6D2F-BF74-7C79-613A98B7CBA3">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:21:31 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_id" id="2427835C-C744-CCD3-E4DA-47375F83B6AC">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:22:08 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="666B72C5-FA6A-EB9D-64E9-FFB9C83BB908" referredColumn="7EBE9A2E-E3A3-5C81-F547-299A91BC2A41"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2DBB9A2-1A8C-ADEE-FFDA-6AFB5BF3A192" name="Phones_PK">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:21:08 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7C0B2D2-1AFB-28E9-93DD-3B989F1A067E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EEE8F29-8913-7A00-4F3E-CA9A93B455DA" name="Phones_Person_FK">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:24:29 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2427835C-C744-CCD3-E4DA-47375F83B6AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

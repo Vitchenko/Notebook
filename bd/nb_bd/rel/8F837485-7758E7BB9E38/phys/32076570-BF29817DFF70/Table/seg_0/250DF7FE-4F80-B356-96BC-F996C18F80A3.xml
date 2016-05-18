@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Person" directorySegmentName="seg_0" id="250DF7FE-4F80-B356-96BC-F996C18F80A3">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:04:48 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Fname" id="4E7B3BB1-E9D3-46C2-1155-C5034E6E10E7">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:08:02 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="7EBE9A2E-E3A3-5C81-F547-299A91BC2A41">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:08:02 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Lname" id="906A991C-7CC8-9209-2C02-D3D55C032D81">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:08:02 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Person_PK" id="5CFB7FCD-02FE-12BD-3E79-42C10213E995">
+<createdBy>viv</createdBy>
+<createdTime>2016-05-12 13:08:03 UTC</createdTime>
+<ownerDesignName>nb_bd</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
