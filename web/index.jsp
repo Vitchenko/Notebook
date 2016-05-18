@@ -1,4 +1,7 @@
-<%@ page import="DAO.testjdbc" %><%--
+<%@ page import="DAO.OraDatabaseConnect" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="Beans.Person" %>
+<%@ page import="DAO.OraCRUDPerson" %><%--
   Created by IntelliJ IDEA.
   User: viv
   Date: 12.05.2016
@@ -80,8 +83,24 @@
   </table>
 
 
-  <% testjdbc tc = new testjdbc();
-      tc.check();  %>
+  <%
+
+  //test add one person
+    Person pr = new Person();
+
+      pr.setLname("testLastName2");
+      pr.setFname("testFastName2");
+      pr.setAdress("testAdress2");
+      pr.setEmail("test@test.ua2");
+      pr.setPhone("+380678794512");
+      pr.setPole(1);
+
+      OraCRUDPerson OraCRUD = new OraCRUDPerson();
+      OraCRUD.createPerson(pr);
+
+
+
+  %>
 
 </body>
 </html>

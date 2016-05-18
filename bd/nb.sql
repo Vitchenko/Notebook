@@ -41,7 +41,8 @@ select * from person;
 select * from nls_database_parameters;
 
 
-
+delete from person where person_id > 1;
+commit;
 
 
 
@@ -130,3 +131,9 @@ commit;
 select * from person where PERSON_ID>20000;
 
 select Lname from person where person_id<100;
+
+INSERT ALL INTO person (Person_id, Lname, Fname, Adress, Pole, Email)
+    VALUES (Person_sc.NEXTVAL, 'createFname', 'createFname', 'createAdress', 1, 'testcreate@te.net.ua ')
+    INTO phones (id, ph_number, person_id)
+    VALUES (Phones_sc.NEXTVAL, '+380678541478', Person_sc.currval )
+    
