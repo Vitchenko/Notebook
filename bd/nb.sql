@@ -137,3 +137,13 @@ INSERT ALL INTO person (Person_id, Lname, Fname, Adress, Pole, Email)
     INTO phones (id, ph_number, person_id)
     VALUES (Phones_sc.NEXTVAL, '+380678541478', Person_sc.currval )
     
+
+
+
+
+
+SELECT Pr.PERSON_ID, Pr.LNAME, Pr.Fname, Pr.Adress, pl.NAME, Pr.Email, Ph.ph_number 
+FROM Person Pr, Phones Ph, Pole pl 
+where Pr.person_id = Ph.PERSON_ID and Pr.POLE=pl.POLE_ID;
+
+select count (person_id) from PERSON;

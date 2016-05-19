@@ -84,25 +84,35 @@
 
 
 <%
-
-    //test add one person
     Person pr = new Person();
 
     OraDatabaseConnect ord = new OraDatabaseConnect();
     Statement stmt;
     stmt = ord.connectDb();
 
-    for (int i = 0; i < 1000; i++) {
-        pr.setLname("testLastName" + i);
-        pr.setFname("testFastName" + i);
-        pr.setAdress("testAdress2" + i);
-        pr.setEmail("test@test.ua2" + i);
-        pr.setPhone("+380678794" + i);
-        pr.setPole(1);
+    //generation 1000 rows
+//    for (int i = 0; i < 1000; i++) {
+//        pr.setLname("testLastName" + i);
+//        pr.setFname("testFastName" + i);
+//        pr.setAdress("testAdress2" + i);
+//        pr.setEmail("test@test.ua2" + i);
+//        pr.setPhone("+380678794" + i);
+//        if ((i % 2) == 0) {
+//            pr.setPole(1);
+//        } else {
+//            pr.setPole(2);
+//        }
+//
+//        OraCRUDPerson OraCRUD = new OraCRUDPerson();
+//        OraCRUD.createPerson(stmt, pr);
+//    }
 
-        OraCRUDPerson OraCRUD = new OraCRUDPerson();
-        OraCRUD.createPerson(stmt, pr);
-    }
+    //generation 1000 rows
+
+
+    //test view CRUD Method ViewAllRows
+    OraCRUDPerson OraCRUD = new OraCRUDPerson();
+    OraCRUD.createPerson(stmt, pr);
 
 
 %>

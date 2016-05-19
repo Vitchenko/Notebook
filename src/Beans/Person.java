@@ -87,4 +87,21 @@ public class Person {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    @Override
+    public String toString() {
+
+        StringBuilder stb = new StringBuilder(10);
+
+        stb.append(this.getPersonid()+" ");
+        stb.append(this.getFname()+" ");
+        stb.append(this.getLname()+" ");
+        stb.append(this.getAdress()+" ");
+        stb.append(this.getEmail()+" ");
+        stb.append(this.getPole()+" ");
+
+        return stb.toString(); // результирующая строка
+
+
+    }
 }
