@@ -147,7 +147,7 @@ FROM Person Pr, Phones Ph, Pole pl
 where Pr.person_id = Ph.PERSON_ID and Pr.POLE=pl.POLE_ID;
 
 select count (person_id) from PERSON; --where LNAME like 'z%';
-
+commit;
 
 SELECT Pr.PERSON_ID, Pr.LNAME, Pr.Fname, Pr.Adress, Pr.Pole, Pr.Email, Ph.ph_number 
 FROM Person Pr, Phones Ph where Pr.person_id = Ph.PERSON_ID;

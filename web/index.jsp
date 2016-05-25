@@ -2,7 +2,8 @@
 <%@ page import="java.sql.Statement" %>
 <%@ page import="Beans.Person" %>
 <%@ page import="DAO.OraCRUDPerson" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="DAO.testPersons" %><%--
   Created by IntelliJ IDEA.
   User: viv
   Date: 12.05.2016
@@ -94,7 +95,12 @@
     //OraCRUD.createPerson(stmt, pr);
 
     ArrayList<Person> al = new ArrayList<Person>(100);
-    al=OraCRUD.viewAllPerson(stmt);
+    //al=OraCRUD.viewAllPerson(stmt);
+    al=OraCRUD.viewPersonLet(stmt,"w");
+
+//    testPersons tp=new testPersons();
+//    tp.personsToDB(stmt);
+
     System.out.println("!!! al.size="+al.size());
     %>
 
@@ -105,7 +111,7 @@
         %>
 
         <li><a href="#">
-            <%=i+" " +al.get(i).getFname() %>
+            <%=i+" " +al.get(i).getLname()+ " " +al.get(i).getFname()+" " +al.get(i).getEmail()+" " +al.get(i).getAdress()+ " " +al.get(i).getPhone()%>
         </a></li>
 
         <%}%>
