@@ -146,4 +146,16 @@ SELECT Pr.PERSON_ID, Pr.LNAME, Pr.Fname, Pr.Adress, pl.NAME, Pr.Email, Ph.ph_num
 FROM Person Pr, Phones Ph, Pole pl 
 where Pr.person_id = Ph.PERSON_ID and Pr.POLE=pl.POLE_ID;
 
-select count (person_id) from PERSON;
+select count (person_id) from PERSON; --where LNAME like 'z%';
+
+
+SELECT Pr.PERSON_ID, Pr.LNAME, Pr.Fname, Pr.Adress, Pr.Pole, Pr.Email, Ph.ph_number 
+FROM Person Pr, Phones Ph where Pr.person_id = Ph.PERSON_ID;
+
+
+delete from person where PERSON_ID>76170;
+delete from phones where phones.id > 76170 ;
+commit;
+
+SELECT Pr.PERSON_ID, Pr.LNAME, Pr.Fname, Pr.Adress, Pr.Pole, Pr.Email, Ph.ph_number 
+FROM Person Pr, Phones Ph where Pr.person_id = Ph.PERSON_ID;

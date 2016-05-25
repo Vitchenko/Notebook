@@ -1,7 +1,8 @@
 <%@ page import="DAO.OraDatabaseConnect" %>
 <%@ page import="java.sql.Statement" %>
 <%@ page import="Beans.Person" %>
-<%@ page import="DAO.OraCRUDPerson" %><%--
+<%@ page import="DAO.OraCRUDPerson" %>
+<%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: viv
   Date: 12.05.2016
@@ -85,37 +86,32 @@
 
 <%
     Person pr = new Person();
-
     OraDatabaseConnect ord = new OraDatabaseConnect();
-    Statement stmt;
+    Statement stmt=null;
     stmt = ord.connectDb();
 
-    //generation 1000 rows
-//    for (int i = 0; i < 1000; i++) {
-//        pr.setLname("testLastName" + i);
-//        pr.setFname("testFastName" + i);
-//        pr.setAdress("testAdress2" + i);
-//        pr.setEmail("test@test.ua2" + i);
-//        pr.setPhone("+380678794" + i);
-//        if ((i % 2) == 0) {
-//            pr.setPole(1);
-//        } else {
-//            pr.setPole(2);
-//        }
-//
-//        OraCRUDPerson OraCRUD = new OraCRUDPerson();
-//        OraCRUD.createPerson(stmt, pr);
-//    }
-
-    //generation 1000 rows
-
-
-    //test view CRUD Method ViewAllRows
     OraCRUDPerson OraCRUD = new OraCRUDPerson();
-    OraCRUD.createPerson(stmt, pr);
+    //OraCRUD.createPerson(stmt, pr);
+
+    ArrayList<Person> al = new ArrayList<Person>(100);
+    al=OraCRUD.viewAllPerson(stmt);
+    System.out.println("!!! al.size="+al.size());
+    %>
+
+    <h4>Список:</h4>
+
+        <%
+            for (int i=0; i<al.size(); i++ ) {
+        %>
+
+        <li><a href="#">
+            <%=i+" " +al.get(i).getFname() %>
+        </a></li>
+
+        <%}%>
 
 
-%>
+
 
 </body>
 </html>
